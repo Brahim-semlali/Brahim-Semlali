@@ -118,16 +118,9 @@ const brahim: Developer = {
 
 ## 📊 GitHub Stats
 
-> Stats powered by [github-readme-activity-graph](https://github.com/Ashutosh00710/github-readme-activity-graph) & [github-profile-summary-cards](https://github.com/vn7n24fzkq/github-profile-summary-cards) — more reliable than readme-stats.
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Brahim-semlali&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d9ff&line=6366f1&point=ffffff&area=true&area_color=6366f1)
-
-![Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Brahim-semlali&theme=tokyo_night)
-
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Brahim-semlali&theme=tokyo_night" width="32%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Brahim-semlali&theme=tokyo_night" width="32%"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Brahim-semlali&theme=tokyo_night" width="32%"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Brahim-semlali&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=6366f1&text_color=94a3b8&count_private=true&include_all_commits=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brahim-semlali&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=94a3b8&langs_count=8" />
 </p>
 
 ---
@@ -135,51 +128,6 @@ const brahim: Developer = {
 ## 🔥 Streak Stats
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=Brahim-semlali&theme=tokyonight&hide_border=true&background=0d1117&stroke=1e2d4a&ring=00d9ff&fire=f97316&currStreakLabel=00d9ff&sideLabels=94a3b8&dates=475569&sideNums=ffffff)
-
----
-
-## 🏆 GitHub Trophies
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=Brahim-semlali&theme=tokyonight&no-frame=true&column=6&margin-w=8&margin-h=8)
-
----
-
-## 📈 Contribution Snake
-
-![Snake animation](https://raw.githubusercontent.com/Brahim-semlali/Brahim-semlali/output/github-contribution-grid-snake-dark.svg)
-
-> ⚙️ To enable the snake: go to your profile repo → **Actions** → enable workflows → add `.github/workflows/snake.yml` (see below)
-
-<details>
-<summary>📄 snake.yml — click to expand</summary>
-
-```yaml
-name: Generate Snake
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: Brahim-semlali
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-</details>
 
 ---
 
@@ -192,9 +140,5 @@ jobs:
 - 🤝 Always happy to **network and learn** from others
 
 ---
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
-</p>
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:6366f1,100:00d9ff&height=120&section=footer)
