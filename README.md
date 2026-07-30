@@ -123,11 +123,62 @@ const brahim: Developer = {
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brahim-semlali&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=94a3b8&langs_count=8" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/dynamic/json?color=00d9ff&label=Total%20Contributions&query=%24.total.lastYear&url=https%3A%2F%2Fgithub-contributions-api.jogruber.de%2Fv4%2FBrahim-semlali%3Fy%3Dlast&style=for-the-badge&logo=github" alt="Total Contributions"/>
+</p>
+
+> Ce badge se recalcule automatiquement à chaque affichage de la page (donc à chaque push, la valeur est à jour sans aucune action manuelle).
+
 ---
 
 ## 🔥 Streak Stats
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=Brahim-semlali&theme=tokyonight&hide_border=true&background=0d1117&stroke=1e2d4a&ring=00d9ff&fire=f97316&currStreakLabel=00d9ff&sideLabels=94a3b8&dates=475569&sideNums=ffffff)
+
+---
+
+## 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brahim-semlali/Brahim-semlali/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/Brahim-semlali/Brahim-semlali/output/github-contribution-grid-snake.svg" />
+</picture>
+
+> ⚠️ Pour que cette animation apparaisse, il faut ajouter le workflow GitHub Actions ci-dessous dans `.github/workflows/snake.yml` — il se déclenche automatiquement à chaque push sur `main` et régénère l'image.
+
+<details>
+<summary>📄 Voir le workflow snake.yml</summary>
+
+```yaml
+name: Generate Snake
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: Brahim-semlali
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+</details>
 
 ---
 
