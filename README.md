@@ -119,9 +119,11 @@ const brahim: Developer = {
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Brahim-semlali&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=6366f1&text_color=94a3b8&count_private=true&include_all_commits=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Brahim-semlali&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=94a3b8&langs_count=8" />
+  <img height="170" src="https://github-stats-extended.vercel.app/api?username=Brahim-semlali&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=6366f1&text_color=94a3b8&count_private=true&include_all_commits=true" />
+  <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Brahim-semlali&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=94a3b8&langs_count=8" />
 </p>
+
+> ℹ️ L'instance publique historique `github-readme-stats.vercel.app` est devenue instable (down/rate-limitée depuis fin 2025). Le projet a officiellement migré vers le fork **GitHub Stats Extended**, utilisé ici — 100% compatible, mêmes paramètres.
 
 ---
 
