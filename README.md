@@ -52,11 +52,10 @@ Bank payment-token lifecycle management portal — issuance, rotation, and black
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Brahim-semlali&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="165"/>
-  <img src="https://streak-stats.demolab.com/?user=Brahim-semlali&theme=tokyonight&hide_border=true&background=0d1117&stroke=1e2d4a&ring=00d9ff&fire=f97316&currStreakLabel=00d9ff&sideLabels=94a3b8&dates=475569&sideNums=ffffff" alt="GitHub Streak" height="165"/>
+  <img src="https://raw.githubusercontent.com/Brahim-semlali/Brahim-Semlali/main/profile/streak.svg" alt="GitHub Streak"/>
 </p>
 
-<p align="center"><sub>Includes private contributions — enabled under Settings → Public profile → "Include private contributions on my profile".</sub></p>
+<p align="center"><sub>Generated daily via GitHub Actions, including private contributions.</sub></p>
 
 ---
 
