@@ -1,4 +1,5 @@
 name: Update streak stats
+
 on:
   schedule:
     - cron: "0 */4 * * *"
@@ -6,33 +7,62 @@ on:
   push:
     paths:
       - ".github/workflows/streak-stats.yml"
+
 concurrency:
   group: streak-stats
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           ref: main
+
       - name: Sync with latest main
         run: |
           git fetch origin main
           git reset --hard origin/main
+
       - name: Generate streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=0D1117&stroke=1E2D4A&ring=00D9FF&fire=F97316&currStreakLabel=00D9FF&sideLabels=94A3B8&dates=475569&sideNums=FFFFFF
           path: profile/streak.svg
           token: ${{ secrets.STREAK_STATS_TOKEN }}
-      - name: Commit streak stats
+
+      - name: Commit and push streak stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/streak.svg
-          git diff --staged --quiet && exit 0
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
           git commit -m "chore: update streak stats"
-          git push origin HEAD:main
+
+          # Retry push up to 3 times in case of transient GitHub API/infra errors
+          n=0
+          until [ "$n" -ge 3 ]
+          do
+            git push origin HEAD:main && break
+            n=$((n+1))
+            echo "Push failed, retrying ($n/3)..."
+            sleep 10
+            git fetch origin main
+            git rebase origin/main
+          done
+
+          if [ "$n" -ge 3 ]; then
+            echo "Push failed after 3 attempts."
+            exit 1
+          fi
